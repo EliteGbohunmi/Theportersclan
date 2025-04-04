@@ -322,7 +322,7 @@ filter: blur(1000px);
 
     place-items: center;
 
-padding: 0 220px;
+padding: 30px 220px;
 
 }
 
@@ -424,7 +424,7 @@ padding: 20px 0px;
 
 .reviews h1{
 
-    font-size: 40px;
+    font-size: 35px;
 
     padding: 20px 0;
 
@@ -654,7 +654,7 @@ text-transform: capitalize;
 
   display: grid;
 
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 2rem;
 
@@ -769,7 +769,9 @@ text-transform: capitalize;
 }
 
 @media (max-width:768px) {
-
+.community_cards{
+grid-template-columns: repeat(1, 1fr);
+}
     nav ul{
 
         flex-direction: column;
