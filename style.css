@@ -4,7 +4,7 @@
  font-family: "Poppins", sans-serif;
  -webkit-tap-highlight-color: transparent;
 }
-body{
+body, .bg{
     background:#fdf6e3;
 }
 img{
@@ -210,7 +210,7 @@ width:90%;
   border-radius: 20px;
 padding: 20px 0px;
 }
-.reviews h1{
+.reviews h1,.ht{
     font-size: 40px;
     padding: 20px 0;
     position: relative;
@@ -383,7 +383,48 @@ text-transform: capitalize;
 .footer-links a:hover {
   text-decoration: underline;
 }
+.aboout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 30px 40px;
+}
+.aboout .about_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboout .about_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.aboout .about_text{
+    display: grid;
+    gap: 1rem;
+    padding: 20px 0;
+}
+.aboout .about_txt h1{
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.aboout .about_txt p{
+    font-size: 20px;
+}
+.aboout .about_text .first_btn{
+    justify-content: flex-start;
+}
+.aboout .about_text .first_btn a{
+    padding: 12px 30px;
+}
+.aboout .about_text .first_btn a:hover{
+    background-color: #de2b2c;
+}
 @media (max-width:768px) {
+    .bg .ht{
+        display: none;
+    }
     nav ul{
         flex-direction: column;
         position: fixed;
@@ -472,7 +513,36 @@ gap: 0;
 .community_cards{
     grid-template-columns: 1fr;
 }
+.aboout{
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
 }
+.aboout .about_img{
+    padding: 0 20px;
+}
+.aboout .about_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.aboout .about_txt{
+    order: 2;
+}
+.aboout .about_txt h1{
+ font-size: 30px;
+}
+.aboout .about_txt p{
+ font-size: 16px;
+}
+.aboout .about_txt .first_btn{
+    justify-content: center;
+}
+.aboout .about_text .first_btn a{
+    padding: 12px 30px;
+}
+}
+
 @media (max-width:1024px){
    
     .hero{
@@ -500,6 +570,12 @@ gap: 0;
      .menu{
         display: none;
     }
+    .aboout .about_txt h1{
+    display: none;
+}
+.bg .ht{
+margin: 0 50px;
+}
 }
 @media (max-width: 600px) {
     .hero{
