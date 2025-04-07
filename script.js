@@ -26,7 +26,7 @@ ScrollReveal().reveal(".kk", {
   opacity: 0,
 });
 ScrollReveal().reveal(".kks", {
-  delay: 900,
+  delay: 600,
   duration: 1500,
   origin: "bottom",
   distance: "100px",
