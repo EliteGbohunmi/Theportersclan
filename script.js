@@ -32,6 +32,15 @@ ScrollReveal().reveal(".kks", {
   distance: "100px",
   opacity: 0,
 });
+
+ScrollReveal().reveal(".kky", {
+  delay: 300,
+  duration: 1500,
+  origin: "bottom",
+  distance: "100px",
+  opacity: 0,
+});
+
 ScrollReveal().reveal(".jj", {
   delay: 1400,
   origin: "bottom",
