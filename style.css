@@ -422,7 +422,7 @@ text-transform: capitalize;
     background-color: #de2b2c;
 }
 @media (max-width:768px) {
-    .bg .ht{
+    .bg .hy{
         display: none;
     }
     nav ul{
