@@ -421,10 +421,31 @@ text-transform: capitalize;
 .aboout .about_text .first_btn a:hover{
     background-color: #de2b2c;
 }
+.bg .hy{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+    font-size: 40px;
+}
+.chiefs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 30px 80px;
+}
+.chief_txt{
+    grid-column:span 2 ;
+}
+.chief_img img{
+    border-radius: 20px;
+}
+.chief_txt h1{
+    font-size: 30px;
+}
 @media (max-width:768px) {
-    .bg .hy{
-        display: none;
-    }
+   .chiefs{
+    padding: 30px 20px;
+   }
     nav ul{
         flex-direction: column;
         position: fixed;
@@ -541,6 +562,16 @@ gap: 0;
 .aboout .about_text .first_btn a{
     padding: 12px 30px;
 }
+ .bg .hy{
+        display: none;
+    }
+    .chiefs{
+        grid-template-columns: 1fr 1fr;
+    }
+    .chiefs .chief_img {
+    grid-column: span 2;
+  
+    }
 }
 
 @media (max-width:1024px){
